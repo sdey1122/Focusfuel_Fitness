@@ -3,7 +3,7 @@
 FocusFuel Fitness is a visually dynamic, professional fitness website with an emphasis on real-world design standards and pixel-perfect responsiveness.
 Every section is meticulously crafted for performance, accessibility, and visual appeal — from hero banners to animated footers.
 
-Website Link : https://sdey1122.github.io/FocusFuel-Fitness/
+Website Link : https://sdey1122.github.io/Focusfuel_Fitness/
 
 This project simulates a real client-grade fitness website, built to demonstrate mastery of:
 
