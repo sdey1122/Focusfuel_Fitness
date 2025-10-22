@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FocusFuel Fitness</title>
+
+    <!-- Swiper JS CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font CDN -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boostrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header Scetion -->
+    <header class="hdr-sec">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container hdr-container position-relative">
+          <a class="navbar-brand nav-logo" href="index.html">
+            <img src="./assets/images/logo/logo.png" alt="website-logo" />
+          </a>
+          <button
+            class="navbar-toggler shadow-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span
+              class="navbar-toggler-icon d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse overlay-collapse" id="mainNav">
+            <ul class="navbar-nav align-items-xl-center m-auto mb-3 mb-xl-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">About Us</a>
+              </li>
+
+              <li
+                class="nav-item dropdown dropdown-hover"
+                data-bs-auto-close="outside"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Features</a
+                >
+
+                <ul class="dropdown-menu rounded-4 py-3">
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item pill d-flex justify-content-between align-items-center submenu-toggle"
+                      href="#"
+                    >
+                      Activity <i class="fa-solid fa-angle-right ms-2"></i>
+                    </a>
+                    <ul class="dropdown-menu rounded-4 py-2">
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Activity One</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Activity Two</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Activity Three</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Activity Four</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Activity Six</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Activity Seven</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item pill d-flex justify-content-between align-items-center submenu-toggle"
+                      href="#"
+                    >
+                      Workouts <i class="fa-solid fa-angle-right ms-2"></i>
+                    </a>
+                    <ul class="dropdown-menu rounded-1 py-2">
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Strength</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Wellness</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Cardio</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Combat</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Transformation</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Personal</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Functional</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Functional</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Endurance</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Power</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Mobility</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Agility</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Recovery</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Zumba</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Detox</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Balance</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Calisthenics</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item pill dd-check"
+                      data-group="features"
+                      href="#"
+                      >Progress Tracking</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item pill dd-check"
+                      data-group="features"
+                      href="#"
+                      >Workout History</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item pill dd-check"
+                      data-group="features"
+                      href="#"
+                      >Rest & Recovery Logs</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Workouts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#trainers">Trainers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#community">Testimonials</a>
+              </li>
+
+              <form class="search-group ms-xl-3 my-3 my-xl-0">
+                <img
+                  src="./assets/images/banner-images/search.png"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+                <input
+                  placeholder="Search"
+                  type="search"
+                  class="input"
+                  id="search"
+                />
+              </form>
+
+              <li class="cart-item ms-xl-3">
+                <a class="cart-link bag-btn" href="#">
+                  <img
+                    src="./assets/images/banner-images/shopping-bag.png"
+                    alt="bag"
+                    width="20"
+                    height="20"
+                  />
+                </a>
+              </li>
+            </ul>
+
+            <div class="ms-xl-3 mb-3 mb-xl-0">
+              <button class="animated-button">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="arr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="text">Login / Create Account</span>
+                <span class="circle"></span>
+                <svg
+                  viewBox="0 0 24 24"
+                  class="arr-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Banner Scetion -->
+      <section class="banner-section">
+        <div class="container">
+          <div class="row bnr-row">
+            <div class="col">
+              <div class="bnr-cntn">
+                <p class="para bnr-para">
+                  Lorem ipsum dolor sit amet consectetur. Nullam vitae leo sed
+                  scelerisque.
+                </p>
+
+                <div class="gym-img">
+                  <img
+                    src="./assets/images/banner-images/banner-frame-one.png"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/images/banner-images/banner-frame-two.png"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/images/banner-images/banner-frame-three.png"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/images/banner-images/banner-frame-four.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="text-box">
+                  <p class="text bnr-para">
+                    <span class="text-hdr">12k +</span> Membership Enjoy Our
+                    Programs
+                  </p>
+                </div>
+
+                <div class="laod-text">
+                  <div class="load">
+                    <hr />
+                    <span class="s"><i class="fa-solid fa-s"></i></span>
+                    <span class="c"><i class="fa-solid fa-c"></i></span>
+                    <span class="r"><i class="fa-solid fa-r"></i></span>
+                    <span class="o"><i class="fa-solid fa-o"></i></span>
+                    <span class="l"><i class="fa-solid fa-l"></i></span>
+                    <span class="l2"><i class="fa-solid fa-l"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="banner-hdr">
+                <h1 class="title-one">
+                  FocusFuel
+                  <span class="title1-span">
+                    Fitness
+                    <img
+                      src="./assets/images/banner-images/Frame-222.png"
+                      alt="frame"
+                      class="frame-icon"
+                    />
+                  </span>
+                  <span class="bnr-line"
+                    ><img src="./assets/bnr-yellow-line.png" alt=""
+                  /></span>
+                </h1>
+
+                <button class="visit-btn-transparent">
+                  <span class="inner-wrapper">
+                    <a href="index.html"
+                      ><span class="text">
+                        <p>Visit</p>
+                        <p class="highlight">Now</p>
+                      </span></a
+                    >
+                    <span class="icon">
+                      <svg
+                        viewBox="0 0 384 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slider-One-Section -->
+      <section class="slider-one-section">
+        <div class="container">
+          <div class="swiper slider-one-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-card">
+                  <img
+                    src="./assets/images/banner-images/Frame-230.png"
+                    alt="Personal Training"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-card">
+                  <img
+                    src="./assets/images/banner-images/Frame-231.png"
+                    alt="Group Workout"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-card">
+                  <img
+                    src="./assets/images/banner-images/Frame-232.png"
+                    alt="Muscle Building"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-card">
+                  <img
+                    src="./assets/images/banner-images/Frame-230.png"
+                    alt="Personal Training"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-card">
+                  <img
+                    src="./assets/images/banner-images/Frame-231.png"
+                    alt="Group Workout"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-card">
+                  <img
+                    src="./assets/images/banner-images/Frame-232.png"
+                    alt="Muscle Building"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About-Section -->
+      <section class="about-gym" id="about-us">
+        <div class="container">
+          <div class="row align-items-center g-0 about-gym__head">
+            <div class="col-lg-6">
+              <div class="about-gym__titlebar d-flex align-items-center">
+                <img
+                  class="about-gym__dot"
+                  src="./assets/images/about-images/Ellipse-2.png"
+                  alt="dot"
+                />
+                <h2 class="about-gym__eyebrow">About Our Gym</h2>
+                <img
+                  class="about-gym__stripes"
+                  src="./assets/images/about-images/Frame-222.png"
+                  alt="stripes"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p class="about-gym__kicker">
+                Empowering Every Body to Move Stronger, Live Better, and Go
+                Further
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center g-0 about-gym__body">
+            <div class="col-lg-6">
+              <figure class="about-gym__figure">
+                <img
+                  class="about-gym__image"
+                  src="./assets/images/about-images/Rectangle-4.png"
+                  alt="About our gym"
+                />
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-gym__content">
+                <h3 class="about-gym__headline">
+                  We believe fitness is more than just physical. It's about
+                  building confidence, discipline, and a lifestyle you can be
+                  proud of.
+                </h3>
+
+                <div class="row g-0 about-gym__copy">
+                  <div class="col-md-6">
+                    <p class="about-gym__para">
+                      Founded with the vision of creating a space for all
+                      fitness levels. Our gym offers expert guidance, modern
+                      equipment, and an uplifting atmosphere to help you achieve
+                      your goals.
+                    </p>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="about-gym__para">
+                      Whether you're a beginner or a seasoned athlete, we're
+                      here to support your journey with diverse programs and a
+                      community that motivates every step of the way.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="about-gym__support d-flex align-items-center">
+                  <span class="about-gym__support-icon">
+                    <img
+                      src="./assets/images/about-images/phone-105.png"
+                      alt="phone"
+                    />
+                  </span>
+                  <div class="about-gym__support-text">
+                    <p class="about-gym__support-label">CUSTOMER SUPPORT</p>
+                    <p class="about-gym__support-number">(888)4000-2424</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Section -->
+      <section class="services-section" id="services">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-12 col-md-3">
+              <div class="services__eyebrow d-flex align-items-center">
+                <img
+                  class="services__dot"
+                  src="./assets/images/service-section/Ellipse-2.png"
+                  alt="dot"
+                />
+                <h2 class="services__label m-0">Services</h2>
+                <img
+                  class="services__stripes"
+                  src="./assets/images/service-section/Frame-222.png"
+                  alt="stripes"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-md-9">
+              <ul class="service-list list-unstyled m-0">
+                <li class="service-item service-item--featured">
+                  <a class="service-link" href="#">
+                    <h3 class="service-title">PERSONAL TRAINING</h3>
+                    <span class="service-line"></span>
+                    <span class="service-arrow"
+                      ><i class="fa-solid fa-arrow-right"></i
+                    ></span>
+                    <img
+                      class="service-preview"
+                      src="./assets/images/service-section/Rectangle-5.png"
+                      alt="Personal training preview"
+                    />
+                  </a>
+                </li>
+                <li class="service-item">
+                  <a class="service-link" href="#">
+                    <h3 class="service-title">GROUP TRAINING</h3>
+                    <span class="service-line"></span>
+                    <span class="service-arrow"
+                      ><i class="fa-solid fa-arrow-right"></i
+                    ></span>
+                  </a>
+                </li>
+                <li class="service-item">
+                  <a class="service-link" href="#">
+                    <h3 class="service-title">CORPORATE TRAINING</h3>
+                    <span class="service-line"></span>
+                    <span class="service-arrow"
+                      ><i class="fa-solid fa-arrow-right"></i
+                    ></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Our Gym Section -->
+      <section class="about-overview" id="about-gym">
+        <div class="container">
+          <div class="row align-items-center about-overview__top">
+            <div class="col-12 col-lg-6">
+              <div class="eyebrow d-flex align-items-center">
+                <img
+                  class="eyebrow__dot"
+                  src="./assets/images/about-our-gym/Ellipse-2.png"
+                  alt="dot"
+                />
+                <h2 class="eyebrow__label m-0">About Our Gym</h2>
+                <img
+                  class="eyebrow__stripes"
+                  src="./assets/images/about-our-gym/Frame-222.png"
+                  alt="stripes"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <p class="about-overview__lede m-0">
+                Turn your workout into a lifestyle that moves you forward
+              </p>
+            </div>
+          </div>
+          <div class="row about-overview__body">
+            <div class="col-12 col-lg-6">
+              <figure class="about-overview__visual" aria-hidden="true">
+                <img
+                  class="about-overview__visual-img"
+                  src="./assets/images/about-our-gym/about-our-gym-butt.png"
+                  alt=""
+                />
+              </figure>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="benefit-grid">
+                <article class="benefit-card">
+                  <i class="fa-solid fa-check benefit-card__icon"></i>
+                  <h3 class="benefit-card__title">
+                    Certified & Experience Coaches
+                  </h3>
+                  <p class="benefit-card__copy">
+                    Lorem ipsum dolor sit amet consectetur. Donec justo volutpat
+                    dictumst suspendisse sed sed at libero. Sed congue diam nisl
+                    lobortis diam ut.
+                  </p>
+                </article>
+
+                <article class="benefit-card">
+                  <i class="fa-solid fa-check benefit-card__icon"></i>
+                  <h3 class="benefit-card__title">
+                    Certified & Experience Coaches
+                  </h3>
+                  <p class="benefit-card__copy">
+                    Lorem ipsum dolor sit amet consectetur. Donec justo volutpat
+                    dictumst suspendisse sed sed at libero. Sed congue diam nisl
+                    lobortis diam ut.
+                  </p>
+                </article>
+
+                <article class="benefit-card">
+                  <i class="fa-solid fa-check benefit-card__icon"></i>
+                  <h3 class="benefit-card__title">
+                    Certified & Experience Coaches
+                  </h3>
+                  <p class="benefit-card__copy">
+                    Lorem ipsum dolor sit amet consectetur. Donec justo volutpat
+                    dictumst suspendisse sed sed at libero. Sed congue diam nisl
+                    lobortis diam ut.
+                  </p>
+                </article>
+
+                <article class="benefit-card">
+                  <i class="fa-solid fa-check benefit-card__icon"></i>
+                  <h3 class="benefit-card__title">
+                    Certified & Experience Coaches
+                  </h3>
+                  <p class="benefit-card__copy">
+                    Lorem ipsum dolor sit amet consectetur. Donec justo volutpat
+                    dictumst suspendisse sed sed at libero. Sed congue diam nisl
+                    lobortis diam ut.
+                  </p>
+                </article>
+
+                <article class="benefit-card">
+                  <i class="fa-solid fa-check benefit-card__icon"></i>
+                  <h3 class="benefit-card__title">
+                    Certified & Experience Coaches
+                  </h3>
+                  <p class="benefit-card__copy">
+                    Lorem ipsum dolor sit amet consectetur. Donec justo volutpat
+                    dictumst suspendisse sed sed at libero. Sed congue diam nisl
+                    lobortis diam ut.
+                  </p>
+                </article>
+
+                <article class="benefit-card">
+                  <i class="fa-solid fa-check benefit-card__icon"></i>
+                  <h3 class="benefit-card__title">
+                    Certified & Experience Coaches
+                  </h3>
+                  <p class="benefit-card__copy">
+                    Lorem ipsum dolor sit amet consectetur. Donec justo volutpat
+                    dictumst suspendisse sed sed at libero. Sed congue diam nisl
+                    lobortis diam ut.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Coach Section -->
+      <section class="coaches-section" id="trainers">
+        <div class="container">
+          <div class="row coaches-top align-items-start">
+            <div class="col-12 col-xl-5">
+              <div class="coaches-eyebrow d-flex align-items-center">
+                <img
+                  class="coaches-dot"
+                  src="./assets/images/meet-our-coaches/Ellipse-2.png"
+                  alt="dot"
+                />
+                <h2 class="coaches-eyebrow__label m-0">Meet Your Coaches</h2>
+                <img
+                  class="coaches-stripes"
+                  src="./assets/images/meet-our-coaches/Frame-222.png"
+                  alt="stripes"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-7">
+              <h3 class="coaches-lede m-0">
+                Flexible Options for Beginners, Regulars, and Hardcore Athletes
+              </h3>
+            </div>
+          </div>
+          <div class="coaches-swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="coach-card">
+                  <figure class="coach-card__media">
+                    <img
+                      src="./assets/images/meet-our-coaches/Frame-241.png"
+                      alt="Coach Ethan Cross"
+                    />
+                  </figure>
+                  <div class="coach-card__meta">
+                    <span class="coach-card__stripes"></span>
+                    <span class="coach-card__role">Fitness Coach</span>
+                    <h4 class="coach-card__name">Ethan Cross</h4>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="coach-card">
+                  <figure class="coach-card__media">
+                    <img
+                      src="./assets/images/meet-our-coaches/Frame-242.png"
+                      alt="Coach Trent Morgan"
+                    />
+                  </figure>
+                  <div class="coach-card__meta">
+                    <span class="coach-card__stripes"></span>
+                    <span class="coach-card__role">Fitness Coach</span>
+                    <h4 class="coach-card__name">Trent Morgan</h4>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="coach-card">
+                  <figure class="coach-card__media">
+                    <img
+                      src="./assets/images/meet-our-coaches/Frame-244.png"
+                      alt="Coach Damian Brooks"
+                    />
+                  </figure>
+                  <div class="coach-card__meta">
+                    <span class="coach-card__stripes"></span>
+                    <span class="coach-card__role">Fitness Coach</span>
+                    <h4 class="coach-card__name">Damian Brooks</h4>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="coach-card">
+                  <figure class="coach-card__media">
+                    <img
+                      src="./assets/images/meet-our-coaches/Frame-241.png"
+                      alt="Coach Ethan Cross"
+                    />
+                  </figure>
+                  <div class="coach-card__meta">
+                    <span class="coach-card__stripes"></span>
+                    <span class="coach-card__role">Fitness Coach</span>
+                    <h4 class="coach-card__name">Ethan Cross</h4>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="coach-card">
+                  <figure class="coach-card__media">
+                    <img
+                      src="./assets/images/meet-our-coaches/Frame-242.png"
+                      alt="Coach Trent Morgan"
+                    />
+                  </figure>
+                  <div class="coach-card__meta">
+                    <span class="coach-card__stripes"></span>
+                    <span class="coach-card__role">Fitness Coach</span>
+                    <h4 class="coach-card__name">Trent Morgan</h4>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="coach-card">
+                  <figure class="coach-card__media">
+                    <img
+                      src="./assets/images/meet-our-coaches/Frame-244.png"
+                      alt="Coach Damian Brooks"
+                    />
+                  </figure>
+                  <div class="coach-card__meta">
+                    <span class="coach-card__stripes"></span>
+                    <span class="coach-card__role">Fitness Coach</span>
+                    <h4 class="coach-card__name">Damian Brooks</h4>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="coaches-pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Plan Section -->
+      <section class="pricing-section">
+        <div class="container">
+          <div class="row align-items-start pricing-head">
+            <div class="col-12 col-xl-5">
+              <div class="pricing-eyebrow d-flex align-items-center">
+                <img
+                  class="pricing-dot"
+                  src="./assets//images/about-images/Ellipse-2.png"
+                  alt="dot"
+                />
+                <h2 class="pricing-eyebrow__label m-0">Choose Your Plan</h2>
+                <img
+                  class="pricing-stripes"
+                  src="./assets/images/about-images/Frame-222.png"
+                  alt="stripes"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-xl-7">
+              <p class="pricing-lede m-0">
+                Flexible plans tailored to your goals—start your fitness journey
+                today.
+              </p>
+            </div>
+          </div>
+          <div class="row pricing-row">
+            <div class="col-12 col-lg-4">
+              <article class="pricing-card h-100">
+                <header class="pricing-card__top">
+                  <div class="pricing-badge">
+                    <div>
+                      <img
+                        class="pricing-stripes ms-0"
+                        src="./assets/images/about-images/Frame-222.png"
+                        alt="stripes"
+                      />
+                    </div>
+                    Basic
+                  </div>
+                  <p class="pricing-blurb">
+                    For beginners taking that first steps into fitness
+                  </p>
+                </header>
+
+                <div class="pricing-price">
+                  <span class="pricing-price__amount">$15</span>
+                  <span class="pricing-price__per">/ month</span>
+                </div>
+
+                <ul class="pricing-features list-unstyled">
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> All Basic
+                    Features
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Unlimited Group
+                    Classes
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Progress &amp;
+                    Body Tracking
+                  </li>
+                  <li><i class="fa-regular fa-circle-check"></i> Locker Use</li>
+                </ul>
+
+                <div class="pricing-cta">
+                  <a href="#" aria-label="Get Basic Membership">
+                    <span></span>
+                    <div class="pricing-cta">
+                      <a href="#" class="cta-fill-btn">
+                        <span>GET MEMBERSHIP</span>
+                      </a>
+                    </div>
+                    <span
+                      class="cta-fill-btn__line cta-fill-btn__line--right"
+                    ></span>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-lg-4">
+              <article class="pricing-card h-100 pricing-card--accent">
+                <header class="pricing-card__top">
+                  <div class="pricing-badge">
+                    <div>
+                      <img
+                        class="pricing-stripes ms-0"
+                        src="./assets/images/about-images/Frame-222.png"
+                        alt="stripes"
+                      />
+                    </div>
+                    Pro
+                  </div>
+                  <p class="pricing-blurb">
+                    Level up with advanced workouts and personalized guidance.
+                  </p>
+                </header>
+
+                <div class="pricing-price">
+                  <span class="pricing-price__amount">$30</span>
+                  <span class="pricing-price__per">/ month</span>
+                </div>
+
+                <ul class="pricing-features list-unstyled">
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> All Basic
+                    Features
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Unlimited Group
+                    Classes
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Progress &amp;
+                    Body Tracking
+                  </li>
+                  <li><i class="fa-regular fa-circle-check"></i> Locker Use</li>
+                </ul>
+
+                <div class="pricing-cta">
+                  <a
+                    href="#"
+                    class="cta-fill-btn cta-fill-btn--solid"
+                    aria-label="Get Pro Membership"
+                  >
+                    <span
+                      class="cta-fill-btn__line cta-fill-btn__line--left"
+                    ></span>
+                    <span class="cta-fill-btn__text">GET MEMBERSHIP</span>
+                    <span
+                      class="cta-fill-btn__line cta-fill-btn__line--right"
+                    ></span>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-lg-4">
+              <article class="pricing-card h-100">
+                <header class="pricing-card__top">
+                  <div class="pricing-badge">
+                    <div>
+                      <img
+                        class="pricing-stripes ms-0"
+                        src="./assets/images/about-images/Frame-222.png"
+                        alt="stripes"
+                      />
+                    </div>
+                    Elite
+                  </div>
+                  <p class="pricing-blurb">
+                    Go all-in with premium coaching for maximum results.
+                  </p>
+                </header>
+
+                <div class="pricing-price">
+                  <span class="pricing-price__amount">$65</span>
+                  <span class="pricing-price__per">/ month</span>
+                </div>
+
+                <ul class="pricing-features list-unstyled">
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> All Basic
+                    Features
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Unlimited Group
+                    Classes
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check"></i> Progress &amp;
+                    Body Tracking
+                  </li>
+                  <li><i class="fa-regular fa-circle-check"></i> Locker Use</li>
+                </ul>
+
+                <div class="pricing-cta">
+                  <a
+                    href="#"
+                    class="cta-fill-btn"
+                    aria-label="Get Elite Membership"
+                  >
+                    <span
+                      class="cta-fill-btn__line cta-fill-btn__line--left"
+                    ></span>
+                    <span class="cta-fill-btn__text">GET MEMBERSHIP</span>
+                    <span
+                      class="cta-fill-btn__line cta-fill-btn__line--right"
+                    ></span>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location Scetion -->
+      <section class="locations-section">
+        <div class="container">
+          <div class="locations-eyebrow d-flex align-items-center">
+            <img
+              class="locations-dot"
+              src="./assets/images/about-images/Ellipse-2.png"
+              alt="dot"
+            />
+            <h2 class="locations-eyebrow__label m-0">Our Locations</h2>
+            <img
+              class="locations-stripes"
+              src="./assets/images/about-images/Frame-222.png"
+              alt="stripes"
+            />
+          </div>
+          <h3 class="locations-headline m-0">
+            Our global presence:
+            <span class="hl">Fitness</span> centers
+            <span class="hl">around the world</span>
+          </h3>
+          <div class="locations-intro d-flex flex-wrap align-items-start">
+            <div class="locations-stat">
+              <div class="locations-stat__number">25<span>+</span></div>
+              <div class="locations-stat__label">Countries</div>
+            </div>
+            <div class="locations-divider-img">
+              <img
+                src="./assets/images/loaction-images/divider-22.png"
+                alt="divider line"
+              />
+            </div>
+            <div class="locations-copy">
+              <p class="m-0">
+                Our presence stretches across continents, connecting a worldwide
+                community of fitness enthusiasts. From bustling metropolitan
+                hubs to growing local neighborhoods, our fitness centers deliver
+                the same trusted quality and results-driven training. Each
+                location is equipped with expert coaches, modern facilities, and
+                a motivating environment tailored to your goals. Whether you are
+                traveling, relocating, or joining us for the first time, you'll
+                always find a home for your fitness journey with us. Together,
+                we're building a stronger, healthier world—one city at a time.
+              </p>
+            </div>
+          </div>
+          <figure class="locations-map m-0">
+            <img
+              src="./assets/images/loaction-images/global-map.png"
+              alt="Global locations map"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Community Section -->
+      <section class="community-hero" id="community">
+        <div class="container">
+          <div class="community-hero__content">
+            <h2 class="community-hero__kicker">Real Stories. Real People.</h2>
+            <h2 class="community-hero__title">Real Transformation.</h2>
+            <div class="community-hero__stripes" aria-hidden="true">
+              <img src="../assets/images/about-images/Frame-222.png" alt="" />
+            </div>
+
+            <p class="community-hero__lede">
+              Join a community that supports your goals with expert coaching,
+              flexible programs and real results.
+            </p>
+          </div>
+          <figure class="community-hero__figure">
+            <img
+              src="./assets/images/Others/Athlete.png"
+              alt="Athlete holding dumbbells"
+            />
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="site-footer__top">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a href="#" class="footer-brand__copy">
+                <i class="bi bi-c-circle"></i> 2025 FitIn.<br />
+                <span>All rights reserved.</span>
+              </a>
+
+              <ul class="footer-social list-unstyled m-0 p-0">
+                <li class="footer-social__item">
+                  <a href="#" class="footer-social__link">
+                    <span>Instagram</span>
+                    <i class="fa-solid fa-arrow-right footer-social__icon"></i>
+                  </a>
+                </li>
+                <li class="footer-social__item">
+                  <a href="#" class="footer-social__link">
+                    <span>Facebook</span>
+                    <i class="fa-solid fa-arrow-right footer-social__icon"></i>
+                  </a>
+                </li>
+                <li class="footer-social__item">
+                  <a href="#" class="footer-social__link">
+                    <span>Youtube</span>
+                    <i class="fa-solid fa-arrow-right footer-social__icon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-navwrap">
+              <a href="#" class="footer-logo">
+                <img
+                  src="./assets/images/Others/logo-transparent.png"
+                  alt="FitIn"
+                />
+              </a>
+              <ul class="footer-menu list-unstyled m-0 p-0">
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#">Home</a>
+                </li>
+                <li class="footer-menu__divider" aria-hidden="true"></li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#about-us">About Us</a>
+                </li>
+                <li class="footer-menu__divider" aria-hidden="true"></li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#">Features</a>
+                </li>
+                <li class="footer-menu__divider" aria-hidden="true"></li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#services">Workouts</a>
+                </li>
+                <li class="footer-menu__divider" aria-hidden="true"></li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#trainers">Trainers</a>
+                </li>
+                <li class="footer-menu__divider" aria-hidden="true"></li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#community">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="footer-divider" />
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="container">
+          <div class="newsletter">
+            <div class="newsletter__copy">
+              <h3 class="newsletter__title m-0">Stay Updated</h3>
+              <p class="newsletter__lede m-0">
+                Event info straight to your inbox. Subscribe to get tips,
+                offers, and updates.
+              </p>
+            </div>
+
+            <form class="newsletter__form" action="#" method="post">
+              <label class="newsletter__field">
+                <input
+                  type="email"
+                  class="newsletter__input"
+                  placeholder="Email input"
+                  required
+                />
+              </label>
+              <button type="submit" class="cta-button">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="cta-button__arr cta-button__arr--out"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="cta-button__text">Subscribe</span>
+                <span class="cta-button__pulse"></span>
+                <svg
+                  viewBox="0 0 24 24"
+                  class="cta-button__arr cta-button__arr--in"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Boostrap  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
