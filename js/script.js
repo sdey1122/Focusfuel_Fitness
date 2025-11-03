@@ -120,6 +120,37 @@ document
     );
   });
 
+// Active Navbar
+(() => {
+  const navLinks = document.querySelectorAll(".nav-link");
+  const currentPage = window.location.pathname.split("/").pop().toLowerCase();
+
+  navLinks.forEach((link) => link.classList.remove("active"));
+
+  if (currentPage.includes("about_us.html")) {
+    document
+      .querySelector('.nav-link[href="about_us.html"]')
+      ?.classList.add("active");
+  } else if (currentPage.includes("workouts.html")) {
+    document
+      .querySelector('.nav-link[href="workout_page.html"]')
+      ?.classList.add("active");
+  } else {
+    document
+      .querySelector('.nav-link[href="#"], .nav-link[href="index.html"]')
+      ?.classList.add("active");
+  }
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const href = link.getAttribute("href")?.toLowerCase();
+      if (href && currentPage.includes(href)) {
+        e.preventDefault();
+      }
+    });
+  });
+})();
+
 // Banner Section
 (function () {
   const header = document.querySelector(".hdr-sec");
@@ -285,16 +316,177 @@ const coachesSwiper = new Swiper(".coaches-swiper", {
   },
 });
 
-
-
-
 const sections = document.querySelectorAll("section[id]");
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY + 200;
-  sections.forEach(sec => {
-    if (scrollY > sec.offsetTop && scrollY <= sec.offsetTop + sec.offsetHeight) {
-      document.querySelectorAll(".nav-link").forEach(link => link.classList.remove("active"));
-      document.querySelector(`.nav-link[href="#${sec.id}"]`)?.classList.add("active");
+  sections.forEach((sec) => {
+    if (
+      scrollY > sec.offsetTop &&
+      scrollY <= sec.offsetTop + sec.offsetHeight
+    ) {
+      document
+        .querySelectorAll(".nav-link")
+        .forEach((link) => link.classList.remove("active"));
+      document
+        .querySelector(`.nav-link[href="#${sec.id}"]`)
+        ?.classList.add("active");
+    }
+  });
+});
+
+// SetInterval
+(() => {
+  const el = document.getElementById("countries-count");
+  if (!el) return;
+
+  const START = 1;
+  const END = 25;
+  const DURATION = 2000;
+  const FPS = 60;
+  let timer = null;
+  let isAnimating = false;
+
+  function setNumber(n) {
+    if (!el.firstChild || el.firstChild.nodeType !== Node.TEXT_NODE) return;
+    el.firstChild.nodeValue = String(n);
+  }
+  function resetCounter() {
+    if (timer) {
+      clearInterval(timer);
+      timer = null;
+    }
+    isAnimating = false;
+    setNumber(START);
+  }
+  function animate() {
+    if (isAnimating) return;
+    isAnimating = true;
+    const totalFrames = Math.max(1, Math.round((DURATION / 1000) * FPS));
+    let frame = 0;
+    timer = setInterval(() => {
+      frame++;
+      const progress = frame / totalFrames;
+      const current = Math.floor(START + progress * (END - START));
+      setNumber(Math.min(current, END));
+      if (frame >= totalFrames) {
+        setNumber(END);
+        clearInterval(timer);
+        timer = null;
+        isAnimating = false;
+      }
+    }, 800 / FPS);
+  }
+
+  const section = document.querySelector(".locations-section") || el;
+
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animate();
+          } else {
+            resetCounter();
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 0.35,
+        rootMargin: "0px 0px -10% 0px",
+      }
+    );
+    io.observe(section);
+  } else {
+    function onScroll() {
+      const r = section.getBoundingClientRect();
+      const inView =
+        r.top < window.innerHeight * 0.65 &&
+        r.bottom > window.innerHeight * 0.35;
+      if (inView) animate();
+      else resetCounter();
+    }
+    window.addEventListener("scroll", onScroll);
+    window.addEventListener("load", onScroll, { once: true });
+  }
+  setNumber(START);
+})();
+
+// Loading Screen
+(() => {
+  const pre = document.getElementById("ff-preloader");
+  if (!pre) return;
+
+  const entry = performance.getEntriesByType("navigation")[0];
+  const navType = entry ? entry.type : (performance.navigation || {}).type;
+  const isReload = navType === "reload" || navType === 1;
+
+  const SEEN_KEY = "ff_preloader_seen";
+  const seen = sessionStorage.getItem(SEEN_KEY) === "1";
+
+  if (seen && !isReload) {
+    document.body.classList.add("ff-preloader-done");
+    pre.remove();
+    return;
+  }
+  const MIN_TIME = 6000;
+  const SAFETY_TIMEOUT = 8000;
+  const start = performance.now();
+
+  const done = () => {
+    const elapsed = performance.now() - start;
+    const wait = Math.max(0, MIN_TIME - elapsed);
+    setTimeout(() => {
+      document.body.classList.add("ff-preloader-done");
+      setTimeout(() => {
+        pre.remove();
+        sessionStorage.setItem(SEEN_KEY, "1");
+      }, 600);
+    }, wait);
+  };
+
+  window.addEventListener("load", done, { once: true });
+  setTimeout(() => {
+    if (!document.body.classList.contains("ff-preloader-done")) done();
+  }, SAFETY_TIMEOUT);
+})();
+
+
+
+
+
+
+
+
+
+
+// Modal
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("authModal");
+  const openBtn = document.querySelector(".nav-auth-btn");
+  const closeBtn = modal.querySelector(".auth-close");
+  const backdrop = modal.querySelector(".auth-backdrop");
+
+  if (openBtn) {
+    openBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      modal.classList.add("is-open");
+      document.body.style.overflow = "hidden";
+    });
+  }
+
+  [closeBtn, backdrop].forEach((el) =>
+    el.addEventListener("click", () => {
+      modal.classList.remove("is-open");
+      document.body.style.overflow = "";
+    })
+  );
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      modal.classList.remove("is-open");
+      document.body.style.overflow = "";
     }
   });
 });

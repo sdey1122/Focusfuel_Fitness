@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FocusFuel Fitness</title>
+
+    <!-- Swiper JS CDN-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <!-- Font CDN -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boostrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/workout_page.css" />
+  </head>
+
+  <body>
+    <!-- Header Scetion -->
+    <header class="hdr-sec">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container hdr-container position-relative">
+          <a class="navbar-brand nav-logo" href="index.html">
+            <img src="./assets/images/logo/logo.png" alt="website-logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span
+              class="navbar-toggler-icon d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse overlay-collapse" id="mainNav">
+            <ul class="navbar-nav align-items-xl-center m-auto mb-3 mb-xl-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about_us.html">About Us</a>
+              </li>
+
+              <li
+                class="nav-item dropdown dropdown-hover"
+                data-bs-auto-close="outside"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Features</a
+                >
+
+                <ul class="dropdown-menu rounded-4 py-3">
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item pill d-flex justify-content-between align-items-center submenu-toggle"
+                      href="#"
+                    >
+                      Activity <i class="fa-solid fa-angle-right ms-2"></i>
+                    </a>
+                    <ul class="dropdown-menu rounded-4 py-2">
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Activity One</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Activity Two</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Activity Three</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Activity Four</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Activity Six</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Activity Seven</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item pill d-flex justify-content-between align-items-center submenu-toggle"
+                      href="#"
+                    >
+                      Workouts <i class="fa-solid fa-angle-right ms-2"></i>
+                    </a>
+                    <ul class="dropdown-menu rounded-1 py-2">
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Strength</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Wellness</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Cardio</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Combat</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Transformation</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Personal</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Functional</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Functional</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Endurance</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Power</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Mobility</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Agility</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Recovery</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Zumba</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Detox</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Balance</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item pill dd-check"
+                          data-group="workouts"
+                          href="#"
+                          >Calisthenics</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item pill dd-check"
+                      data-group="features"
+                      href="#"
+                      >Progress Tracking</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item pill dd-check"
+                      data-group="features"
+                      href="#"
+                      >Workout History</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item pill dd-check"
+                      data-group="features"
+                      href="#"
+                      >Rest & Recovery Logs</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="workout_page.html">Workouts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#trainers">Trainers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#community">Testimonials</a>
+              </li>
+
+              <form class="search-group ms-xl-3 my-3 my-xl-0">
+                <img
+                  src="./assets/images/banner-images/search.png"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+                <input
+                  placeholder="Search"
+                  type="search"
+                  class="input"
+                  id="search"
+                />
+              </form>
+
+              <li class="cart-item ms-xl-3">
+                <a class="cart-link bag-btn" href="#">
+                  <img
+                    src="./assets/images/banner-images/shopping-bag.png"
+                    alt="bag"
+                    width="20"
+                    height="20"
+                  />
+                </a>
+              </li>
+            </ul>
+
+            <div class="ms-xl-3 mb-3 mb-xl-0">
+              <button class="animated-button">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="arr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="text">Login / Create Account</span>
+                <span class="circle"></span>
+                <svg
+                  viewBox="0 0 24 24"
+                  class="arr-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Banner Scetion -->
+      <section class="bnr-sec">
+        <div class="container">
+          <div class="hero-cntn">
+            <h1 class="title-1">
+              <span class="title1-span">About</span>
+              Us
+            </h1>
+
+            <div class="breadcrumb">
+              <ul class="breadcrumb-item">
+                <li class="list-items">
+                  <a href="./index.html" class="breadcrumb-link text-uppercase"
+                    >Home</a
+                  >
+                </li>
+                <li class="square"></li>
+                <li class="breadcrumb-link breadcrumb-active text-uppercase">
+                  <a href="about_us.html" class="abt-link">About Us</a>
+                </li>
+              </ul>
+            </div>
+
+            <img
+              class="banner-stripes-unique"
+              src="./assets/images/about-images/Frame-222.png"
+              alt="stripes"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Workout Stats Section -->
+      <section id="ff-stats" class="ff-stats-section">
+        <div class="container">
+          <div class="ff-stats-row">
+            <article class="ff-stats-item">
+              <img
+                class="ff-stripes"
+                src="./assets/images/about-images/Frame-222.png"
+                alt=""
+              />
+              <div
+                class="ff-stats-value js-counter"
+                data-target="91"
+                data-format="kplus"
+              >
+                1K+
+              </div>
+              <p class="ff-stats-label">Project Done</p>
+            </article>
+            <article class="ff-stats-item">
+              <img
+                class="ff-stripes"
+                src="./assets/images/about-images/Frame-222.png"
+                alt=""
+              />
+              <div
+                class="ff-stats-value js-counter"
+                data-target="84"
+                data-format="kplus"
+              >
+                1K+
+              </div>
+              <p class="ff-stats-label">Happy Clients</p>
+            </article>
+            <article class="ff-stats-item">
+              <img
+                class="ff-stripes"
+                src="./assets/images/about-images/Frame-222.png"
+                alt=""
+              />
+              <div
+                class="ff-stats-value js-counter"
+                data-target="42"
+                data-format="plus"
+              >
+                1+
+              </div>
+              <p class="ff-stats-label">Company Support</p>
+            </article>
+            <article class="ff-stats-item">
+              <img
+                class="ff-stripes"
+                src="./assets/images/about-images/Frame-222.png"
+                alt=""
+              />
+              <div
+                class="ff-stats-value js-counter"
+                data-target="4.7"
+                data-format="fixed1"
+              >
+                1.0
+              </div>
+              <p class="ff-stats-label">Project Done</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Workout Dropdown Section -->
+      <section class="ff-filters-section" id="workouts">
+        <div class="container ff-container">
+          <div class="ff-eyebrow">
+            <img
+              class="who-dot"
+              src="./assets/images/about-images/Ellipse-2.png"
+              alt=""
+            />
+            <h3 class="ff-eyebrow-title">WORKOUTS</h3>
+            <img
+              class="who-stripes"
+              src="./assets/images/about-images/Frame-222.png"
+              alt=""
+            />
+          </div>
+          <div class="ff-filter-row">
+            <div class="ff-filter-col">
+              <button
+                class="ff-filter-toggle"
+                aria-expanded="false"
+                aria-controls="ffMenuCats"
+              >
+                <span>WORKOUT CATEGORIES</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="ff-filter-menu" id="ffMenuCats" role="menu">
+                <div class="ff-menu-card">
+                  <h4 class="ff-menu-title">workout categories</h4>
+                  <ul class="ff-menu-list">
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" checked /><span
+                          >Strength</span
+                        ></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Wellness</span></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Cardio</span></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Combat</span></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span
+                          >Transformation</span
+                        ></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Personal</span></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Functional</span></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Endurance</span></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Power</span></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Mobility</span></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Agility</span></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Recovery</span></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Zumba</span></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Detox</span></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Balance</span></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span
+                          >Calisthenics</span
+                        ></label
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="ff-filter-col">
+              <button
+                class="ff-filter-toggle"
+                aria-expanded="false"
+                aria-controls="ffMenuTrainers"
+              >
+                <span>TRAINERS</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="ff-filter-menu" id="ffMenuTrainers" role="menu">
+                <div class="ff-menu-card">
+                  <h4 class="ff-menu-title">Trainers</h4>
+                  <ul class="ff-menu-list">
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" checked /><span
+                          >Ethan Cross</span
+                        ></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span
+                          >Trent Morgan</span
+                        ></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span
+                          >Damian Brooks</span
+                        ></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span
+                          >Marcus Cole</span
+                        ></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span
+                          >Samantha Blaze</span
+                        ></label
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="ff-filter-col">
+              <button
+                class="ff-filter-toggle"
+                aria-expanded="false"
+                aria-controls="ffMenuMode"
+              >
+                <span>WORKOUT MODE</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+
+              <div class="ff-filter-menu" id="ffMenuMode" role="menu">
+                <div class="ff-menu-card">
+                  <h4 class="ff-menu-title">Workout Mode</h4>
+                  <ul class="ff-menu-list">
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" checked /><span
+                          >Personal Training</span
+                        ></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span
+                          >Group Workout</span
+                        ></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span
+                          >Muscle Building</span
+                        ></label
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="ff-filter-col">
+              <button
+                class="ff-filter-toggle"
+                aria-expanded="false"
+                aria-controls="ffMenuMember"
+              >
+                <span>MEMBERSHIP TYPE</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+
+              <div class="ff-filter-menu" id="ffMenuMember" role="menu">
+                <div class="ff-menu-card">
+                  <h4 class="ff-menu-title">Membership Type</h4>
+                  <ul class="ff-menu-list">
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" checked /><span
+                          >Basic</span
+                        ></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Pro</span></label
+                      >
+                    </li>
+                    <li>
+                      <label class="ff-check"
+                        ><input type="checkbox" /><span>Elite</span></label
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Workout ISO Section -->
+      <section class="workouts-iso" id="workouts-iso">
+        <div class="container">
+          <div class="iso-grid">
+            <article class="iso-card strength">
+              <div class="iso-card__frame">
+                <span class="badge">STRENGTH</span>
+
+                <figure class="hero hero-1">
+                  <img
+                    src="./assets/images/about_section/isotop-img-one.png"
+                    alt="Power Build hero"
+                  />
+                </figure>
+
+                <img
+                  class="noise"
+                  src="./assets/images/about_section/isotop-background.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <img
+                  class="banner-stripes"
+                  src="./assets/images/about-images/Frame-222.png"
+                  alt="stripes"
+                />
+                <span class="author">BY ETHAN CROSS</span>
+              </div>
+
+              <div class="iso-card__bottom">
+                <div class="left">
+                  <span class="num">01</span>
+                  <div class="text">
+                    <h4>Power Build Program</h4>
+                    <p>Focus on muscle growth and compound lifts.</p>
+                  </div>
+                </div>
+                <button class="enroll-btn animated-button-enroll">
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                  </svg>
+                  <span class="text">Enroll Now</span>
+                  <span class="circle"></span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+            <article class="iso-card wellness">
+              <div class="iso-card__frame">
+                <span class="badge">WELLNESS</span>
+
+                <figure class="hero hero-2">
+                  <img
+                    src="./assets/images/about_section/isotop-img-two.png"
+                    alt="Yoga Flow hero"
+                  />
+                </figure>
+
+                <img
+                  class="noise"
+                  src="./assets/images/about_section/isotop-background.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <img
+                  class="banner-stripes"
+                  src="./assets/images/about-images/Frame-222.png"
+                  alt="stripes"
+                />
+                <span class="author">BY TRENT MORGAN</span>
+              </div>
+              <div class="iso-card__bottom">
+                <div class="left">
+                  <span class="num">02</span>
+                  <div class="text">
+                    <h4>Yoga Flow</h4>
+                    <p>Improve flexibility and mindfulness.</p>
+                  </div>
+                </div>
+
+                <button class="enroll-btn animated-button-enroll">
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                  </svg>
+                  <span class="text">Enroll Now</span>
+                  <span class="circle"></span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+            <article class="iso-card cardio">
+              <div class="iso-card__frame">
+                <span class="badge">CARDIO</span>
+
+                <figure class="hero hero-3">
+                  <img
+                    src="./assets/images/about_section/isotop-img-three.png"
+                    alt="Cardio hero"
+                  />
+                </figure>
+
+                <img
+                  class="noise"
+                  src="./assets/images/about_section/isotop-background.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <img
+                  class="banner-stripes"
+                  src="./assets/images/about-images/Frame-222.png"
+                  alt="stripes"
+                />
+                <span class="author">BY MARCUS COLE</span>
+              </div>
+
+              <div class="iso-card__bottom">
+                <div class="left">
+                  <span class="num">03</span>
+                  <div class="text">
+                    <h4>Cardio Blast</h4>
+                    <p>Treadmill, cycling, and jump rope sessions.</p>
+                  </div>
+                </div>
+                <button class="enroll-btn animated-button-enroll">
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                  </svg>
+                  <span class="text">Enroll Now</span>
+                  <span class="circle"></span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+            <article class="iso-card strength">
+              <div class="iso-card__frame">
+                <span class="badge">STRENGTH</span>
+
+                <figure class="hero hero-4">
+                  <img
+                    src="./assets/images/about_section/isotop-img-four.png"
+                    alt="Weightlifting hero"
+                  />
+                </figure>
+
+                <img
+                  class="noise"
+                  src="./assets/images/about_section/isotop-background.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <img
+                  class="banner-stripes"
+                  src="./assets/images/about-images/Frame-222.png"
+                  alt="stripes"
+                />
+                <span class="author">BY ETHAN CROSS</span>
+              </div>
+              <div class="iso-card__bottom">
+                <div class="left">
+                  <span class="num">04</span>
+                  <div class="text">
+                    <h4>Weightlifting 101</h4>
+                    <p>Learn Olympic and free weight techniques.</p>
+                  </div>
+                </div>
+                <button class="enroll-btn animated-button-enroll">
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                  </svg>
+                  <span class="text">Enroll Now</span>
+                  <span class="circle"></span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </article>
+            <article class="iso-card combat">
+              <div class="iso-card__frame">
+                <span class="badge">COMBAT</span>
+                <figure class="hero hero-5">
+                  <img
+                    src="./assets/images/about_section/isotop-img-five.png"
+                    alt="Boxing hero"
+                  />
+                </figure>
+                <img
+                  class="noise"
+                  src="./assets/images/about_section/isotop-background.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <img
+                  class="banner-stripes"
+                  src="./assets/images/about-images/Frame-222.png"
+                  alt="stripes"
+                />
+                <span class="author">BY DAMIAN BROOKS</span>
+              </div>
+              <div class="iso-card__bottom">
+                <div class="left">
+                  <span class="num">05</span>
+                  <div class="text">
+                    <h4>BoxFit Training</h4>
+                    <p>Boxing drills for strength and agility.</p>
+                  </div>
+                </div>
+                <button class="enroll-btn animated-button-enroll">
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    />
+                  </svg>
+                  <span class="text">Enroll Now</span
+                  ><span class="circle"></span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </article>
+            <article class="iso-card strength">
+              <div class="iso-card__frame">
+                <span class="badge">STRENGTH</span>
+                <figure class="hero hero-1">
+                  <img
+                    src="./assets/images/about_section/isotop-img-one.png"
+                    alt="Functional Strength hero"
+                  />
+                </figure>
+                <img
+                  class="noise"
+                  src="./assets/images/about_section/isotop-background.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <img
+                  class="banner-stripes"
+                  src="./assets/images/about-images/Frame-222.png"
+                  alt="stripes"
+                />
+                <span class="author">BY ETHAN CROSS</span>
+              </div>
+              <div class="iso-card__bottom">
+                <div class="left">
+                  <span class="num">06</span>
+                  <div class="text">
+                    <h4>Functional Strength</h4>
+                    <p>Core stability and endurance workouts.</p>
+                  </div>
+                </div>
+                <button class="enroll-btn animated-button-enroll">
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    />
+                  </svg>
+                  <span class="text">Enroll Now</span
+                  ><span class="circle"></span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </article>
+            <article class="iso-card calisthenics">
+              <div class="iso-card__frame">
+                <span class="badge">CALISTHENICS</span>
+                <figure class="hero hero-7">
+                  <img
+                    src="./assets/images/about_section/isotop-img-six.png"
+                    alt="Core Stability hero"
+                  />
+                </figure>
+                <img
+                  class="noise"
+                  src="./assets/images/about_section/isotop-background.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <img
+                  class="banner-stripes"
+                  src="./assets/images/about-images/Frame-222.png"
+                  alt="stripes"
+                />
+                <span class="author">BY SAMANTHA BLAZE</span>
+              </div>
+              <div class="iso-card__bottom">
+                <div class="left">
+                  <span class="num">07</span>
+                  <div class="text">
+                    <h4>Core Stability</h4>
+                    <p>Build a stronger, balanced core.</p>
+                  </div>
+                </div>
+                <button class="enroll-btn animated-button-enroll">
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    />
+                  </svg>
+                  <span class="text">Enroll Now</span
+                  ><span class="circle"></span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </article>
+            <article class="iso-card calisthenics">
+              <div class="iso-card__frame">
+                <span class="badge">CALISTHENICS</span>
+                <figure class="hero hero-6">
+                  <img
+                    src="./assets/images/about_section/isotop-img-seven.png"
+                    alt="Handstand hero"
+                  />
+                </figure>
+                <img
+                  class="noise"
+                  src="./assets/images/about_section/isotop-background.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <img
+                  class="banner-stripes"
+                  src="./assets/images/about-images/Frame-222.png"
+                  alt="stripes"
+                />
+                <span class="author">BY SAMANTHA BLAZE</span>
+              </div>
+              <div class="iso-card__bottom">
+                <div class="left">
+                  <span class="num">08</span>
+                  <div class="text">
+                    <h4>Handstand Training</h4>
+                    <p>Master balance and shoulder strength.</p>
+                  </div>
+                </div>
+                <button class="enroll-btn animated-button-enroll">
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    />
+                  </svg>
+                  <span class="text">Enroll Now</span
+                  ><span class="circle"></span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </article>
+            <div class="iso-empty" aria-live="polite" aria-hidden="true">
+              <div class="iso-empty__inner">
+                <span class="iso-empty__eyebrow">
+                  <img
+                    src="./assets/images/about-images/Ellipse-2.png"
+                    alt=""
+                  />
+                  <strong>NO MATCHES</strong>
+                  <img
+                    src="./assets/images/about-images/Frame-222.png"
+                    alt=""
+                  />
+                </span>
+                <p>Stay Tuned</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rate-wrap">
+          <a href="#" class="cta-fill-btn"><span>Load more</span></a>
+        </div>
+      </section>
+
+      <!-- Discover Section -->
+      <section class="discover-section">
+        <div class="discover-bg">
+          <div class="discover-overlay">
+            <h2>Your Fitness Journey Starts with Our Professional Trainers</h2>
+            <p>
+              Ultrices quam mattis posuere porttitor tellus rhoncus tristique.
+              Primis aliquam dignissim interdum vel suscipit sodales.
+            </p>
+            <button class="discover-btn"><b>DISCOVER MORE</b></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Common Questions Section -->
+      <section class="faq-section" id="faq">
+        <div class="container">
+          <div class="faq-eyebrow">
+            <img
+              class="who-dot"
+              src="./assets/images/about-images/Ellipse-2.png"
+              alt=""
+            />
+            <h3>COMMON QUESTIONS</h3>
+          </div>
+          <h2 class="faq-title">
+            Got Questions? Find All FitNation Answers Right Here
+          </h2>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false" aria-controls="ans-1">
+                <span
+                  >Sem sollicitudin placerat taciti venenatis urna
+                  ullamcorper?</span
+                >
+                <i class="chev"></i>
+              </button>
+              <div class="faq-a" id="ans-1" role="region" aria-hidden="true">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur in risus id lorem posuere porttitor. Vivamus semper
+                  dignissim lectus at sagittis.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false" aria-controls="ans-2">
+                <span
+                  >Sem sollicitudin placerat taciti venenatis urna
+                  ullamcorper?</span
+                >
+                <i class="chev"></i>
+              </button>
+              <div class="faq-a" id="ans-2" role="region" aria-hidden="true">
+                <p>
+                  Nullam porta, tellus non dictum tempor, sem nibh faucibus
+                  libero, eget consequat justo mauris non enim. Integer luctus
+                  porta augue.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false" aria-controls="ans-3">
+                <span
+                  >Sem sollicitudin placerat taciti venenatis urna
+                  ullamcorper?</span
+                >
+                <i class="chev"></i>
+              </button>
+              <div class="faq-a" id="ans-3" role="region" aria-hidden="true">
+                <p>
+                  Phasellus suscipit leo sed turpis porta, nec elementum diam
+                  fermentum. Aenean vitae metus in lacus venenatis pharetra.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false" aria-controls="ans-4">
+                <span
+                  >Sem sollicitudin placerat taciti venenatis urna
+                  ullamcorper?</span
+                >
+                <i class="chev"></i>
+              </button>
+              <div class="faq-a" id="ans-4" role="region" aria-hidden="true">
+                <p>
+                  Quisque bibendum, leo at tincidunt dapibus, metus eros aliquet
+                  tortor, sed hendrerit magna orci vitae purus.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false" aria-controls="ans-5">
+                <span
+                  >Sem sollicitudin placerat taciti venenatis urna
+                  ullamcorper?</span
+                >
+                <i class="chev"></i>
+              </button>
+              <div class="faq-a" id="ans-5" role="region" aria-hidden="true">
+                <p>
+                  Donec gravida, magna vel convallis efficitur, orci risus
+                  venenatis nunc, nec vestibulum urna lorem vitae arcu.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false" aria-controls="ans-6">
+                <span
+                  >Sem sollicitudin placerat taciti venenatis urna
+                  ullamcorper?</span
+                >
+                <i class="chev"></i>
+              </button>
+              <div class="faq-a" id="ans-6" role="region" aria-hidden="true">
+                <p>
+                  Mauris laoreet porta dui, in iaculis arcu aliquet at. Integer
+                  mattis, nibh vel dictum dictum, sapien est gravida elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+     <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="site-footer__top">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a href="#" class="footer-brand__copy">
+                <i class="bi bi-c-circle"></i> 2025 FitIn.<br />
+                <span>All rights reserved.</span>
+              </a>
+
+              <ul class="footer-social list-unstyled m-0 p-0">
+                <li class="footer-social__item">
+                  <a href="#" class="footer-social__link">
+                    <span>Instagram</span>
+                    <i class="fa-solid fa-arrow-right footer-social__icon"></i>
+                  </a>
+                </li>
+                <li class="footer-social__item">
+                  <a href="#" class="footer-social__link">
+                    <span>Facebook</span>
+                    <i class="fa-solid fa-arrow-right footer-social__icon"></i>
+                  </a>
+                </li>
+                <li class="footer-social__item">
+                  <a href="#" class="footer-social__link">
+                    <span>Youtube</span>
+                    <i class="fa-solid fa-arrow-right footer-social__icon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-navwrap">
+              <a href="#" class="footer-logo">
+                <img
+                  src="./assets/images/Others/logo-transparent.png"
+                  alt="FitIn"
+                />
+              </a>
+              <ul class="footer-menu list-unstyled m-0 p-0">
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="index.html">Home</a>
+                </li>
+                <li class="footer-menu__divider" aria-hidden="true"></li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="about_us.html">About Us</a>
+                </li>
+                <li class="footer-menu__divider" aria-hidden="true"></li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#">Features</a>
+                </li>
+                <li class="footer-menu__divider" aria-hidden="true"></li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="workout_page.html"
+                    >Workouts</a
+                  >
+                </li>
+                <li class="footer-menu__divider" aria-hidden="true"></li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#trainers">Trainers</a>
+                </li>
+                <li class="footer-menu__divider" aria-hidden="true"></li>
+                <li class="footer-menu__item">
+                  <a class="footer-menu__link" href="#community"
+                    >Testimonials</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="footer-divider" />
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="container">
+          <div class="newsletter">
+            <div class="newsletter__copy">
+              <h3 class="newsletter__title m-0">Stay Updated</h3>
+              <p class="newsletter__lede m-0">
+                Event info straight to your inbox. Subscribe to get tips,
+                offers, and updates.
+              </p>
+            </div>
+
+            <form class="newsletter__form" action="#" method="post">
+              <label class="newsletter__field">
+                <input
+                  type="email"
+                  class="newsletter__input"
+                  placeholder="Email input"
+                  required
+                />
+              </label>
+              <button type="submit" class="cta-button">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="cta-button__arr cta-button__arr--out"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="cta-button__text">Subscribe</span>
+                <span class="cta-button__pulse"></span>
+                <svg
+                  viewBox="0 0 24 24"
+                  class="cta-button__arr cta-button__arr--in"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Isotop JS -->
+    <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Boostrap  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="./js/workout_page.js"></script>
+  </body>
+</html>

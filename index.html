@@ -33,8 +33,64 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+<div id="modalContainer"></div>
 
   <body>
+
+    <!-- Loading Screen -->
+<div id="ff-preloader" aria-hidden="true">
+  <div class="ff-preloader__inner">
+    <div class="ff-preloader__row" aria-label="FITIN">
+      <div class="loader" data-letter="F">
+        <svg viewBox="0 0 80 80" aria-hidden="true">
+          <rect x="8" y="8" width="64" height="64"></rect>
+        </svg>
+        <span class="loader-text">F</span>
+      </div>
+      <div class="loader" data-letter="I">
+        <svg viewBox="0 0 80 80" aria-hidden="true">
+          <rect x="8" y="8" width="64" height="64"></rect>
+        </svg>
+        <span class="loader-text">I</span>
+      </div>
+      <div class="loader" data-letter="T">
+        <svg viewBox="0 0 80 80" aria-hidden="true">
+          <rect x="8" y="8" width="64" height="64"></rect>
+        </svg>
+        <span class="loader-text">T</span>
+      </div>
+
+      <div class="loader" data-letter="I">
+        <svg viewBox="0 0 80 80" aria-hidden="true">
+          <rect x="8" y="8" width="64" height="64"></rect>
+        </svg>
+        <span class="loader-text">I</span>
+      </div>
+
+      <div class="loader" data-letter="N">
+        <svg viewBox="0 0 80 80" aria-hidden="true">
+          <rect x="8" y="8" width="64" height="64"></rect>
+        </svg>
+        <span class="loader-text">N</span>
+      </div>
+    </div>
+<div id="ff-preloader" aria-hidden="true">
+  <div class="ff-preloader__center">
+    <div class="ff-preloader__letters" aria-label="FITIN">
+      <div class="loader"><svg viewBox="0 0 80 80" aria-hidden="true"><rect x="8" y="8" width="64" height="64"/></svg><span>F</span></div>
+      <div class="loader"><svg viewBox="0 0 80 80" aria-hidden="true"><rect x="8" y="8" width="64" height="64"/></svg><span>I</span></div>
+      <div class="loader"><svg viewBox="0 0 80 80" aria-hidden="true"><rect x="8" y="8" width="64" height="64"/></svg><span>T</span></div>
+      <div class="loader"><svg viewBox="0 0 80 80" aria-hidden="true"><rect x="8" y="8" width="64" height="64"/></svg><span>I</span></div>
+      <div class="loader"><svg viewBox="0 0 80 80" aria-hidden="true"><rect x="8" y="8" width="64" height="64"/></svg><span>N</span></div>
+    </div>
+    <div class="ff-sub">
+      <span>FOCUSFUEL</span>
+      <span>FITNESS</span>
+    </div>
+  </div>
+</div>
+</div>
+</div>
     <!-- Header Scetion -->
     <header class="hdr-sec">
       <nav class="navbar navbar-expand-xl">
@@ -64,7 +120,7 @@
                 <a class="nav-link active" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about-us">About Us</a>
+                <a class="nav-link" href="about_us.html">About Us</a>
               </li>
 
               <li
@@ -314,7 +370,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#services">Workouts</a>
+                <a class="nav-link" href="workout_page.html">Workouts</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#trainers">Trainers</a>
@@ -361,7 +417,7 @@
                     d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
                   ></path>
                 </svg>
-                <span class="text">Login / Create Account</span>
+                <span class="text nav-auth-btn">Login / Create Account</span>
                 <span class="circle"></span>
                 <svg
                   viewBox="0 0 24 24"
@@ -378,6 +434,94 @@
         </div>
       </nav>
     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="auth-modal" id="authModal" aria-hidden="true">
+  <div class="auth-backdrop" data-auth="close"></div>
+
+  <div class="auth-dialog" role="dialog" aria-modal="true">
+    <button class="auth-close" data-auth="close" aria-label="Close">&times;</button>
+
+    <!-- Left: Form -->
+    <div class="auth-left">
+      <div class="auth-left-bg"></div>
+      <div class="auth-left-inner">
+        <h2>Create Account</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Enim et in tellus at. Blandit etiam.</p>
+
+        <form class="auth-form">
+          <div class="form-row">
+            <input type="text" placeholder="Firstname*" />
+            <input type="text" placeholder="Lastname*" />
+          </div>
+          <div class="form-row">
+            <input type="email" placeholder="Email Address*" />
+          </div>
+          <div class="form-row">
+            <input type="text" placeholder="Gender*" />
+            <input type="number" placeholder="Age*" />
+            <input type="tel" placeholder="Phone*" />
+          </div>
+          <div class="form-row">
+            <input type="text" placeholder="Weight" />
+            <input type="text" placeholder="Goal" />
+          </div>
+          <div class="form-row">
+            <input id="authPwd" type="password" placeholder="Password*" />
+          </div>
+          <label class="terms-row">
+            <input type="checkbox" /> I agree to the <a href="#">Terms & Privacy</a>
+          </label>
+          <button class="btn-signup" type="button">Sign Up</button>
+          <p class="auth-switch">Already have an account? <a href="#">Login</a></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="auth-right">
+      <div class="auth-right-bg"></div>
+      <div class="auth-right-img"></div>
+      <div class="auth-right-text">
+        <p>Lorem ipsum dolor sit amet consectetur. Volutpat sittortor tempus congue adipiscing aliquam cursus turpis ultricies.</p>
+        <div class="radio-row">
+          <label><input type="radio" name="role" checked />Firstname Lastname</label>
+          <label><input type="radio" name="role" />Open Ventures</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <main>
       <!-- Banner Scetion -->
@@ -1128,8 +1272,8 @@
             <span class="hl">around the world</span>
           </h3>
           <div class="locations-intro d-flex flex-wrap align-items-start">
-            <div class="locations-stat">
-              <div class="locations-stat__number">25<span>+</span></div>
+           <div class="locations-stat">
+            <div class="locations-stat__number" id="countries-count">25<span>+</span></div>
               <div class="locations-stat__label">Countries</div>
             </div>
             <div class="locations-divider-img">
@@ -1227,11 +1371,11 @@
               </a>
               <ul class="footer-menu list-unstyled m-0 p-0">
                 <li class="footer-menu__item">
-                  <a class="footer-menu__link" href="#">Home</a>
+                  <a class="footer-menu__link" href="index.html">Home</a>
                 </li>
                 <li class="footer-menu__divider" aria-hidden="true"></li>
                 <li class="footer-menu__item">
-                  <a class="footer-menu__link" href="#about-us">About Us</a>
+                  <a class="footer-menu__link" href="about_us.html">About Us</a>
                 </li>
                 <li class="footer-menu__divider" aria-hidden="true"></li>
                 <li class="footer-menu__item">
@@ -1239,7 +1383,7 @@
                 </li>
                 <li class="footer-menu__divider" aria-hidden="true"></li>
                 <li class="footer-menu__item">
-                  <a class="footer-menu__link" href="#services">Workouts</a>
+                  <a class="footer-menu__link" href="workout_page.html">Workouts</a>
                 </li>
                 <li class="footer-menu__divider" aria-hidden="true"></li>
                 <li class="footer-menu__item">
